@@ -1,0 +1,40 @@
+
+#set-height {
+    display: block;
+}
+#v0, #v1 {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    -o-object-fit: cover;
+    object-fit: cover;
+    overflow: hidden;
+    transition: opacity 0.5s ease; 
+}
+
+#v0 {
+    opacity: 1; /* First video starts visible */
+}
+
+#v1 {
+    opacity: 0; /* Second video starts hidden */
+}
+.navigate-button {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    z-index: 1;
+}
+
+.navigate-button:hover {
+    background-color: #0056b3;
+}
